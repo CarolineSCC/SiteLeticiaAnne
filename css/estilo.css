@@ -1,0 +1,673 @@
+header {
+    background-color: #cc8efe; /* Cor de fundo */
+    padding: 20px 0;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.container1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Alinha os itens do container */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaçamento entre o logo e o menu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista em linha */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50; /* Cor dos links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+header {
+    background-color: #cc8efe; /* Cor de fundo */
+    padding: 20px 0;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Alinha os itens do container */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaçamento entre o logo e o menu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista em linha */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50; /* Cor dos links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+.social-icons {
+    margin-left: auto; /* Empurra os ícones para a direita */
+}
+
+.social-icons a {
+    margin-left: 15px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    height: 24px; /* Ajuste o tamanho do ícone */
+    width: 24px; /* Ajuste o tamanho do ícone */
+}
+
+
+
+footer {
+    background-color: #cc8efe; /* Cor de fundo do rodapé */
+    color: black; /* Cor do texto */
+    padding: 20px 0;
+}
+
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens do rodapé */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    padding: 0 20px;
+}
+
+.footer-logo-img {
+    height: 50px; /* Ajuste a altura do logotipo */
+    margin-bottom: 10px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1; /* Faz com que as seções ocupem espaço igual */
+    margin-right: 20px; /* Espaçamento entre as seções */
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin: 0 0 10px 0; /* Margem inferior */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+}
+
+.footer-links a, .footer-contact a {
+    text-decoration: none;
+    color: white; /* Cor dos links */
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+.footer-social {
+    display: flex; /* Para alinhar os ícones em linha */
+    align-items: center; /* Alinha os ícones verticalmente */
+}
+
+.footer-social a {
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    height: 40px; /* Tamanho do ícone */
+    width: 40px; /* Tamanho do ícone */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para o contêiner do carrossel */
+.div-slider {
+    width: auto; /* Largura automática */
+    height: 400px; /* Altura do carrossel */
+    text-align: center; /* Centraliza o conteúdo textualmente */
+}
+
+/* Estilo para o contêiner dos slides */
+.slides-front {
+    padding: 0; /* Remove o preenchimento */
+    width: 890px; /* Largura do carrossel */
+    height: 376px; /* Altura do carrossel */
+    display: block; /* Exibe o contêiner como bloco */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+}
+
+/* Desativa a seleção de texto para todos os elementos dentro de slides-front */
+.slides-front * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Esconde os inputs de controle dos slides */
+.slides-front input {
+    display: none;
+}
+
+/* Estilo para o contêiner dos slides */
+.slide-container {
+    display: block; /* Exibe o contêiner como bloco */
+}
+
+/* Estilo para cada slide */
+.slide {
+    top: 0; /* Posiciona o slide no topo do contêiner */
+    opacity: 0; /* Torna o slide invisível inicialmente */
+    width: 890px; /* Largura do slide */
+    height: 376px; /* Altura do slide */
+    display: block; /* Exibe o slide como bloco */
+    position: absolute; /* Posiciona o slide absolutamente dentro do contêiner */
+    transform: scale(0); /* Inicialmente escala o slide para 0 */
+    transition: all .7s ease-in-out 0.1s; /* Transição suave para todas as propriedades */
+}
+
+/* Estilo para a imagem dentro de cada slide */
+.slide img {
+    width: 100%; /* Largura da imagem é 100% do slide */
+    height: 100%; /* Altura da imagem é 100% do slide */
+    border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Estilo para os botões de navegação (setas) */
+.nav label {
+    width: -200px; /* Largura dos botões de navegação */
+    height: 100%; /* Altura dos botões de navegação */
+    display: none; /* Inicialmente escondido */
+    position: absolute; /* Posiciona o botão absolutamente */
+    opacity: 0; /* Torna o botão invisível */
+    z-index: 9; /* Define a ordem de empilhamento (acima dos slides) */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    transition: opacity .2s; /* Transição suave para a opacidade */
+    color: rgb(6, 6, 6); /* Cor do texto dos botões de navegação */
+    font-size: 70pt; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    line-height: 376px; /* Altura da linha igual à altura dos botões de navegação */
+    font-family:"Arial, Helvetica, sans-serif"; /* Fonte dos botões de navegação */
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo transparente */
+    text-shadow: 0px 0px 15px #cc8efe; /* Sombra do texto */
+}
+
+/* Mostra os botões de navegação quando o slide é hover (passa o mouse sobre) */
+.slide:hover + .nav label {
+    opacity: 0.5; /* Torna o botão parcialmente visível */
+}
+
+/* Mostra o botão de navegação quando o mouse passa por cima */
+.nav label:hover {
+    opacity: 1; /* Torna o botão totalmente visível */
+}
+
+/* Posiciona o botão de navegação para avançar slides no lado direito */
+.nav .next {
+    right: 0; /* Alinha à direita */
+
+}
+
+/* Estilo aplicado aos slides quando o input de controle está checado */
+input:checked + .slide-container .slide {
+    opacity: 1; /* Torna o slide visível */
+    transform: scale(1); /* Restaura a escala do slide para 1 */
+    transition: opacity 1s ease-in-out 0.1s; /* Transição suave para a opacidade */
+}
+
+/* Mostra os botões de navegação quando o input de controle está checado */
+input:checked + .slide-container .nav label {
+    display: block; /* Torna os botões de navegação visíveis */
+}
+
+/* Estilo para os pontos de navegação (indicadores) */
+.nav-dots {
+    width: 100%; /* Largura total do contêiner de pontos */
+    bottom: 70px; /* Posiciona na parte inferior */
+    height: 5px; /* Altura dos pontos */
+    display: block; /* Exibe o contêiner como bloco */
+    position: relative; /* Posiciona relativamente */
+    text-align: center; /* Centraliza os pontos */
+}
+
+/* Estilo para cada ponto de navegação */
+.nav-dots .nav-dot {
+    top: 445px; /* Posiciona os pontos mais abaixo no carrossel */
+    width: 6px; /* Largura dos pontos */
+    height: 8px; /* Altura dos pontos */
+    margin: 0 4px; /* Espaçamento entre os pontos */
+    position: relative; /* Posiciona relativamente */
+    border-radius: 100%; /* Faz os pontos serem circulares */
+    display: inline-block; /* Exibe os pontos em linha */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo dos pontos */
+}
+
+/* Muda a cor dos pontos quando o mouse passa por cima */
+.nav-dots .nav-dot:hover {
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    background-color: rgba(0, 0, 0, 0.8); /* Torna o fundo mais escuro */
+}
+
+/* Muda a cor dos pontos quando o input correspondente está checado */
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3 {
+    background: rgba(0, 0, 0, 0.8); /* Torna o ponto correspondente mais escuro */
+}
+
+/* Efeito de zoom quando um elemento com a classe 'efeito' é hover */
+.efeito:hover {
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    transition-duration: 1s; /* Duração da transição */
+    transform: scale(1.3, 1.3); /* Aumenta o tamanho do elemento em 1.3x */
+}
+
+
+.container4 {
+    display: flex;
+    margin-left: 120px;
+    flex-direction: row; /* Mantém lado a lado em telas grandes */
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+.text {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8e5ff;
+}
+
+
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* Ajuste conforme necessário */
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Para adaptar a telas menores */
+}
+
+.card {
+    text-align: center;
+    max-width: 350px;
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Cor rosa (personalize conforme quiser) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Efeito ao passar o mouse */
+}
+
+button:hover {
+    background-color: #ff1493; /* Cor mais escura ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query para responsividade */
+@media (max-width: 922px) {
+    /* Estilo para telas menores que 600px */
+    nav ul li {
+        display: none; /* Muda os itens da lista para o modo bloco */
+        margin: 10px 0; /* Margem vertical entre os itens */
+    }
+
+    main {
+        flex-direction: column; /* Alinha os itens do main verticalmente */
+    }
+
+    aside {
+        flex: 1; /* Permite que a barra lateral ocupe o espaço restante */
+    }
+    
+
+    .social-icons a {
+        display: none; /* Espaçamento entre os ícones */
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .footer-social{
+        display: none;
+    }
+    .footer-logo-img {
+        height: 30px; /* Ajuste a altura do logotipo */
+    }
+
+    
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 920px) {
+    .div-slider {
+        height: auto; /* Ajusta a altura do carrossel para dispositivos móveis */
+    }
+
+    .slides-front {
+        max-width: 100%; /* Permite que o carrossel ocupe toda a largura disponível */
+    }
+
+    .slide {
+        width: 100%; /* Largura de cada slide é 100% da tela */
+        height: auto; /* A altura se ajusta automaticamente */
+    }
+
+    .slide img {
+        width: 100%; /* A imagem ocupa toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+
+    .nav label {
+        width: 2px; /* Largura dos botões de navegação */
+        height: 60px; /* Altura dos botões de navegação */
+        font-size: 100px; /* Tamanho da fonte */
+        line-height: 30px; /* Altura da linha igual à altura dos botões de navegação */
+        margin-right: 20px;
+        margin-top: 150px;
+
+    }
+    .nav-dots .nav-dot {
+        top: 230px; /* Posiciona os pontos mais abaixo no carrossel */
+        width: 4px; /* Largura dos pontos */
+        height: 6px; /* Altura dos pontos */
+        margin: 0 2px; /* Espaçamento entre os pontos */
+    }
+}
+@media (max-width: 730px) {
+    .nav label {
+        width: 2px; /* Largura dos botões de navegação */
+        height: 30px; /* Altura dos botões de navegação */
+        font-size: 60px; /* Tamanho da fonte */
+        line-height: 30px; /* Altura da linha igual à altura dos botões de navegação */
+        margin-top: 80px;
+        margin-right: 20px;
+
+    }
+    .nav-dots .nav-dot {
+        top: 280px; /* Posiciona os pontos mais abaixo no carrossel */
+        width: 4px; /* Largura dos pontos */
+        height: 6px; /* Altura dos pontos */
+        margin: 0 2px; /* Espaçamento entre os pontos */
+    }
+}
+
+/* Media Queries para dispositivos menores que 480px (ex: smartphones) */
+@media (max-width: 480px) {
+    .div-slider {
+        height: 250px; /* Reduz a altura do carrossel em telas menores */
+    }
+
+    .slides-front {
+        max-width: 100%;
+    }
+
+    .slide {
+        width: 100%; /* Largura de cada slide é 100% da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .slide img {
+        width: 100%; /* A imagem ocupa toda a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .nav label {
+        width: 2px; /* Largura dos botões de navegação */
+        height: 30px; /* Altura dos botões de navegação */
+        font-size: 60px; /* Tamanho da fonte */
+        line-height: 30px; /* Altura da linha igual à altura dos botões de navegação */
+        margin-top: 65px;
+        margin-right: 20px;
+
+    }
+    .nav-dots .nav-dot {
+        top: 230px; /* Posiciona os pontos mais abaixo no carrossel */
+        width: 4px; /* Largura dos pontos */
+        height: 6px; /* Altura dos pontos */
+        margin: 0 2px; /* Espaçamento entre os pontos */
+    }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha imagem e texto em telas pequenas */
+    }
+
+    .image,
+    .text {
+        flex: none;
+        width: 100%; /* Ocupa toda a largura em telas pequenas */
+    }
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.text {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8e5ff;
+    text-align: center; /* Centraliza o texto em telas menores */
+}
+
+.text h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container5 {
+        gap: 20px; /* Diminui o espaçamento entre os cards em telas menores */
+    }
+
+    .card {
+        max-width: 100%; /* Os cards ocupam toda a largura disponível */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        padding: 10px; /* Adiciona padding para cards menores */
+    }
+
+    button {
+        font-size: 0.9em; /* Diminui o tamanho da fonte do botão em telas muito pequenas */
+    }
+}
+
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* Ajuste conforme necessário */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container4 {
+        margin-left: 20px; /* Diminui a margem esquerda em telas menores */
+        flex-direction: column; /* Coloca os itens em coluna para telas menores */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 20px; /* Adiciona padding para telas menores */
+    }
+
+    .image, .text {
+        flex: none;
+        width: 100%; /* Faz com que a imagem e o texto ocupem toda a largura disponível */
+    }
+
+    .image img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    }
+
+    .text h1 {
+        font-size: 28px; /* Ajusta o tamanho da fonte do título para telas menores */
+    }
+
+    .text p {
+        font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container4 {
+        margin-left: 10px; /* Diminui mais a margem para telas muito pequenas */
+        padding: 10px; /* Diminui o padding */
+    }
+
+    .text h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .text p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+}

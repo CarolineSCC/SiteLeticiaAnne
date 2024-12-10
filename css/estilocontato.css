@@ -1,0 +1,262 @@
+header {
+    background-color: #cc8efe; /* Cor de fundo */
+    padding: 20px 0;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.container1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Alinha os itens do container */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaçamento entre o logo e o menu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista em linha */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50; /* Cor dos links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+header {
+    background-color: #cc8efe; /* Cor de fundo */
+    padding: 20px 0;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center; /* Alinha os itens do container */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    margin-right: 20px; /* Espaçamento entre o logo e o menu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista em linha */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50; /* Cor dos links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+.social-icons {
+    margin-left: auto; /* Empurra os ícones para a direita */
+}
+
+.social-icons a {
+    margin-left: 15px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    height: 24px; /* Ajuste o tamanho do ícone */
+    width: 24px; /* Ajuste o tamanho do ícone */
+}
+
+
+
+footer {
+    background-color: #cc8efe; /* Cor de fundo do rodapé */
+    color: black; /* Cor do texto */
+    padding: 20px 0;
+}
+
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espaça os itens do rodapé */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    padding: 0 20px;
+}
+
+.footer-logo-img {
+    height: 50px; /* Ajuste a altura do logotipo */
+    margin-bottom: 10px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1; /* Faz com que as seções ocupem espaço igual */
+    margin-right: 20px; /* Espaçamento entre as seções */
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin: 0 0 10px 0; /* Margem inferior */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+}
+
+.footer-links a, .footer-contact a {
+    text-decoration: none;
+    color: white; /* Cor dos links */
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+.footer-social {
+    display: flex; /* Para alinhar os ícones em linha */
+    align-items: center; /* Alinha os ícones verticalmente */
+}
+
+.footer-social a {
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    height: 40px; /* Tamanho do ícone */
+    width: 40px; /* Tamanho do ícone */
+}
+
+  
+  /* Seção do formulário */
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgb(203, 147, 220);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .form-container h1 {
+    font-size: 20px;
+    color: #6c478f;
+    margin-bottom: 10px;
+  }
+  
+  .form-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .form-container label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-container button {
+    background-color: #6c478f;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #4b2f69;
+  }
+
+
+  
+    
+/* Responsividade do cabeçalho */
+@media (max-width: 768px) {
+    .menu ul {
+      display: none; /* Esconde o menu */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #cc8efe;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu ul.active {
+      display: flex; /* Mostra o menu ao clicar */
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .social-icons {
+      display: none;
+    }
+  
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        height: 40px;
+    }
+
+    .footer-logo-img {
+        height: 40px;
+    }
+
+    .form-container {
+        width: 90%; /* Reduzir o formulário para dispositivos menores */
+    }
+}
